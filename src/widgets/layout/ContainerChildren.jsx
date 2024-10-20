@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 export default function ContainerChildren ({children,title,filter,exportCSV})  {
   return(
     <div className="">
-      <div className="flex justify-between">
+      <div className="mb-5 flex justify-between">
         <div>
           <h1 className="text-2xl font-body">{title}</h1>
         </div>
@@ -13,7 +13,9 @@ export default function ContainerChildren ({children,title,filter,exportCSV})  {
           <Button color="blue">{exportCSV}</Button>
         </div>
       </div>
-      {children}
+      <div>
+        {children}
+      </div>
     </div>
   )
 }

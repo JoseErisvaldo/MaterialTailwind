@@ -7,7 +7,7 @@ import PiwChart from "../../data/charts/PieChart";
 export default function Home () {
   return(
     <ContainerChildren title={'Dashboard'} filter={'Filtrar'} exportCSV={'exportCSV'}>
-      <div className="grid grid-cols-3 gap-5">
+      <div className=" flex flex-col sm:grid sm:grid-cols-3 sm:gap-5">
         <div className="h-full">
           <LineChart /> 
         </div>
